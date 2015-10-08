@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Test1</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string-array name="champ_ids">
+        <item>ahri</item>
+        <item>aatrox</item>
+
+    </string-array>
+    <string-array name="images">
+        <item>@drawable/aatrox</item>
+        <item>@drawable/aatrox</item>
+        <item>@drawable/aatrox</item>
+        <item>@drawable/aatrox</item>
+        <item>@drawable/aatrox</item>
+        <item>@drawable/aatrox</item>
+        <item>@drawable/aatrox</item>
+    </string-array>
+
+
+</resources>
