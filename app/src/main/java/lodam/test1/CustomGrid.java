@@ -10,19 +10,19 @@ import android.widget.TextView;
 
 public class CustomGrid extends BaseAdapter{
     private Context mContext;
-    private final String[] web;
-    private final int[] Imageid;
+    private final String[] title;
+    private final int[] image;
 
-    public CustomGrid(Context c,String[] web,int[] Imageid ) {
+    public CustomGrid(Context c,String[] title,int[] image ) {
         mContext = c;
-        this.Imageid = Imageid;
-        this.web = web;
+        this.image = image;
+        this.title = title;
     }
 
     @Override
     public int getCount() {
         // TODO Auto-generated method stub
-        return web.length;
+        return title.length;
     }
 
     @Override
@@ -50,8 +50,8 @@ public class CustomGrid extends BaseAdapter{
             grid = inflater.inflate(R.layout.grid_single, null);
             TextView textView = (TextView) grid.findViewById(R.id.grid_text);
             ImageView imageView = (ImageView)grid.findViewById(R.id.grid_image);
-            textView.setText(web[position]);
-            imageView.setImageResource(Imageid[position]);
+            textView.setText(title[position]);
+            imageView.setImageResource(image[position]);
         } else {
             grid = (View) convertView;
         }
