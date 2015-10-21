@@ -12,7 +12,6 @@ public class MainActivity extends AppCompatActivity {
     //private GridView gridView2;
     //private  GridViewAdapter gridAdapter;
     GridView grid;
-
     int[] images = {
             R.drawable.aatrox,
             R.drawable.ahri,
