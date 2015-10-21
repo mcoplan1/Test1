@@ -141,7 +141,7 @@ public class MainActivity extends AppCompatActivity {
             R.drawable.zilean,
             R.drawable.zyra,
     };
-
+    //league champ names
     String[] titles = {
             "aatrox",
             "ahri",
