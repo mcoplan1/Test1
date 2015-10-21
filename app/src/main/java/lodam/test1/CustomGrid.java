@@ -22,19 +22,19 @@ public class CustomGrid extends BaseAdapter{
     @Override
     public int getCount() {
         // TODO Auto-generated method stub
-        return title.length;
+        return image.length;
     }
 
     @Override
     public Object getItem(int position) {
         // TODO Auto-generated method stub
-        return null;
+        return image[position];
     }
 
     @Override
     public long getItemId(int position) {
         // TODO Auto-generated method stub
-        return 0;
+        return position;
     }
 
     @Override
@@ -46,16 +46,16 @@ public class CustomGrid extends BaseAdapter{
 
         if (convertView == null) {
 
-            grid = new View(mContext);
+            //grid = new View(mContext);
             grid = inflater.inflate(R.layout.grid_single, null);
-            TextView textView = (TextView) grid.findViewById(R.id.grid_text);
-            ImageView imageView = (ImageView)grid.findViewById(R.id.grid_image);
-            textView.setText(title[position]);
-            imageView.setImageResource(image[position]);
         } else {
             grid = (View) convertView;
+
         }
-    //
+        TextView textView = (TextView) grid.findViewById(R.id.grid_text);
+        ImageView imageView = (ImageView)grid.findViewById(R.id.grid_image);
+        textView.setText(title[position]);
+        imageView.setImageResource(image[position]);
         return grid;
     }
 }

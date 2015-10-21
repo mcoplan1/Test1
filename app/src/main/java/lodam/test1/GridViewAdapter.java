@@ -1,10 +1,12 @@
 package lodam.test1;
 
+
 import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 
 import com.squareup.picasso.Picasso;
@@ -12,14 +14,17 @@ import com.squareup.picasso.Picasso;
 /**
  * Created by Matt on 10/6/2015.
  */
+
 public class GridViewAdapter extends BaseAdapter {
     private Context context;
-    private String[] images;
+    //private String[] titles;
+    private  int[] images;
 
-    public GridViewAdapter(Context context, String[] images){
+    public GridViewAdapter(Context context, int[] images){
         super();
         this.context = context;
         this.images = images;
+        //this.titles = titles;
     }
 
     @Override

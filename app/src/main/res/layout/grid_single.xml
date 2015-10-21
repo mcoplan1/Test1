@@ -5,8 +5,8 @@
 
     <ImageView
         android:id="@+id/grid_image"
-        android:layout_width="50dp"
-        android:layout_height="50dp">
+        android:layout_width="65dp"
+        android:layout_height="65dp">
     </ImageView>
 
     <TextView
@@ -16,6 +16,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:textColor="@color/whiteText"
+        android:background="@color/blackText"
         style="@style/AudioFileInfoOverlayText"
         >
     </TextView>
